@@ -4,40 +4,33 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ki Ki</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <style>
-    .bg-cat {
-      background-image: url('kikibg.png'); /* Replace with your image */
-      background-size: cover;
-      background-position: center;
-    }
-  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="relative min-h-screen flex items-center justify-center px-2 py-4">
+<body class="min-h-screen flex items-center justify-center bg-repeat" style="background-image: url('kikibg.png');">
 
-    <!-- Background Image -->
-    <div class="absolute inset-0 bg-cat bg-cover bg-center"></div>
-  
-    <!-- Overlay -->
-    <div class="absolute inset-0 bg-black opacity-40"></div>
-  
-    <!-- Card -->
-    <div class="relative z-10 bg-white bg-opacity-95 backdrop-blur-md rounded-2xl shadow-lg border border-yellow-200 w-full max-w-sm px-4 py-6 text-center space-y-3">
-  
-      <img src="kiki.jpg" alt="My Cat" class="mx-auto rounded-full w-32 h-32 object-cover border-4 border-yellow-200">
-  
-      <h1 class="text-2xl font-bold text-yellow-900">Ki Ki</h1>
-      <p class="text-yellow-800 italic text-sm">Breed: Domestic Shorthair</p>
-  
-      <div class="text-gray-800 text-sm space-y-1">
-        <p>📞 Contact: +66 623279036</p>
-        <p>📱 LINE ID: elenya_k</p>
-        <p>🏠 Address: dcondo Campus Resort Bangna,<br />
-          Building A, Bangna Trad Road,<br />
-          BangBo, Samut Prakan, 10560</p>
-      </div>
-      
+  <div class="max-w-md w-[90%] sm:w-[28rem] bg-white bg-opacity-90 backdrop-blur-md rounded-2xl shadow-lg border border-yellow-200 p-6 sm:p-8 text-center space-y-4">
+    
+    <!-- Profile Picture -->
+    <div class="flex justify-center">
+      <img src="kiki.jpg" alt="Ki Ki" class="w-32 h-32 rounded-full border-4 border-yellow-300 object-cover shadow-md" />
     </div>
-  </body>
-  
+    
+    <!-- Name -->
+    <h1 class="text-2xl sm:text-3xl font-semibold text-[#773300]">Ki Ki</h1>
+    
+    <!-- Breed -->
+    <p class="text-sm sm:text-base italic text-orange-600">Breed: Domestic Shorthair</p>
+
+    <!-- Contact Info -->
+    <div class="mt-2 space-y-2 text-sm sm:text-base text-gray-800 text-center">
+      <p>📞 <strong>Contact:</strong> +66 623279036</p>
+      <p>📱 <strong>LINE ID:</strong> elenya_k</p>
+      <p>🏡 <strong>Address:</strong> dcondo Campus Resort Bangna,<br />
+        Building A, Bangna Trad Road,<br />
+        BangBo, Samut Prakan, 10560</p>
+    </div>
+
+  </div>
+
+</body>
 </html>
